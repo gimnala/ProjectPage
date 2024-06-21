@@ -219,7 +219,8 @@
             2) 사용한 인공지능 모델<br>
             이 프로젝트에서는 Random Forest 분류기를 인공지능 모델로 사용했다. Random Forest 모델은 분류, 회귀 분석 등에 사용되는 앙상블 학습 방법 중 하나 [5] 로 여러 개의 결정 트리를 훈련하고, 그 예측값들을 결합해서 최종 예측을 생성하는 방식이다. 
             Random Forest의 특징은 다음과 같다.<br>
-            Random Forest 모델은 앙상블 학습 방법 중 하니아므로, 과적합을 방지해서 일반화 성능을 향상시킬 수 있다. 또한 Random Forest 모델은 각 변수의 중요도를 측정할 수 있어서, 모델이 어떤 변수를 중심적으로 사용하는지 파악할 수 있다. 이러한 장점들 때문에 Random Forest를 학습 모델로 사용하는 경우가 많다. 
+            <img src="static/images/image10.png" alt="MY ALT TEXT"/>
+            <br>Random Forest 모델은 앙상블 학습 방법 중 하니아므로, 과적합을 방지해서 일반화 성능을 향상시킬 수 있다. 또한 Random Forest 모델은 각 변수의 중요도를 측정할 수 있어서, 모델이 어떤 변수를 중심적으로 사용하는지 파악할 수 있다. 이러한 장점들 때문에 Random Forest를 학습 모델로 사용하는 경우가 많다. 
             RandoomForest 모델의 사용법은 RandomForestClassifier(n_estimators=100, *, criterion='gini', max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features='sqrt', max_leaf_nodes=None, min_impurity_decrease=0.0, bootstrap=True, oob_score=False, n_jobs=None, random_state=None, verbose=0, warm_start=False, class_weight=None, ccp_alpha=0.0, max_samples=None, monotonic_cst=None)이다.
             RandomForest 모델은 sckiit러닝 사이트를 참고해서 구축했다.
 
