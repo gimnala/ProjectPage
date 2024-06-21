@@ -196,7 +196,7 @@
         <div class="content has-text-justified">
           <p>
             1) 데이터 전처리 과정<br>
-            이 프로젝트에서 수행한 전처리 과정은 다음과 같다.<br>
+            이 프로젝트에서 수행한 전처리 과정은 다음과 같다.<br><br>
             우선 데이터가 담겨있는 csv 파일의 데이터를 담은 데이터프레임 안에 결측치가 있는지를 확인하기 위해 isnull() 함수와 sum()함수를 사용했다. 
             isnull()함수는 데이터프레임의 각 요소가 결측치인지 아닌지를 True나 False로 나타내는 새로운 데이터프레임을 반환한다. 
             sum()함수는 isnull()함수에 의해 생성된 데이터프레임에서 True값을 1로 간주하고, 각 열의 True값들의 총합을 계산한다. 
@@ -208,11 +208,8 @@
             이 때, inplace=True 옵션을 사용해서 원본 데이터프레임 data가 수정된다.
             <br>
             이렇게 결측치들을 채워봤으니 다시 결측치의 여부를 확인해봐야 한다. data.isnull().sum() 을 출력하면 출력값들이 모든 열에 대해 0이 되었음을 확인할 수 있다. 그러므로 범주형 변수는 결측치가 없었다는 의미다. 그렇기에 범주형 변수는 결측치를 채우는 작업을 수행할 필요가 없다. 
-            <br>
+            <br><br>
             결측치를 처리했으니 이제는 target 변수를 정의해야 한다. data의 feature들 중, '수축기혈압'과 '이완기혈압'을 기준으로 고혈압 여부를 '고혈압'과 '정상인'으로 라벨링해서 타겟 변수를 생성했다. 고혈압 환자로 판단하는 기준인 '수축기혈압'이 140이고, '이완기혈압'이 90이상인 경우를 타겟변수 '고혈압'으로 정의했다.
-            
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
       </div>
